@@ -1,9 +1,11 @@
 package com.securityApp.securityApp.entity;
 
 public class Insurance {
+	
 	private long id;
 	private String name;
 	private int premium;
+	
 	public long getId() {
 		return id;
 	}

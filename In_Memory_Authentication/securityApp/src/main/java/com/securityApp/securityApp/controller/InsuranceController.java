@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.securityApp.securityApp.entity.Insurance;
@@ -37,5 +38,10 @@ public class InsuranceController {
 		return insurances;
 	}
 	
-	public 
+	@PostMapping("/insurances")
+	public Insurance addInsurance(Insurance insurance) {
+		
+		insurances.add(insurance);
+		return insurance;
+	}
 }
