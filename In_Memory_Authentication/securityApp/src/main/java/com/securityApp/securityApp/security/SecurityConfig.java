@@ -39,8 +39,8 @@ public class SecurityConfig {
 								.build();
 		
 		UserDetails vendor1 = User.builder()
-				.username("Bajaj")
-				.password(passwordEncoder().encode("Bajaj@1234"))
+				.username("Vendor")
+				.password(passwordEncoder().encode("Vendor@1234"))
 				.roles("VENDOR")
 				.build();
 		
